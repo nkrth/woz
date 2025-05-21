@@ -25,7 +25,14 @@ class ChatBotApp:
         self.build_analytics_frame()
 
     def build_chat_frame(self):
-        self.chat_frame = tk.Frame(self.root, bg="white", bd=0, relief="flat")
+        self.chat_frame = tk.LabelFrame(
+            self.root,
+            text="CHATS",
+            bg="white",
+            bd=0,
+            relief="flat",
+            font=("Arial", 9, "bold"),
+        )
         self.chat_frame.place(x=20, y=20, width=300, height=300)
 
         self.chat_log = tk.Text(
